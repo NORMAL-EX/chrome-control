@@ -1,0 +1,31 @@
+{
+  "name": "chrome-control-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for controlling Chrome browser via Puppeteer",
+  "type": "module",
+  "main": "server/index.js",
+  "bin": {
+    "chrome-control-mcp": "server/index.js"
+  },
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "chrome",
+    "puppeteer",
+    "automation",
+    "browser"
+  ],
+  "author": "Chrome Control MCP",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "puppeteer-core": "^24.30.0",
+    "sharp": "^0.33.5",
+    "zod": "^3.25.76"
+  }
+}

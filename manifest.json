@@ -1,0 +1,113 @@
+{
+  "manifest_version": "0.2",
+  "name": "chrome-control",
+  "display_name": "Chrome Browser Control",
+  "version": "1.0.0",
+  "description": "Control Chrome browser with MCP - navigate, click, type, screenshot, execute scripts and more",
+  "long_description": "This MCP extension allows Claude to control a Chrome browser instance using Puppeteer. Features include page navigation, element interaction (clicking, typing), content extraction, screenshots, JavaScript execution, cookie management, and full browser automation capabilities. Perfect for web scraping, testing, and automated workflows.",
+  "author": {
+    "name": "Chrome Control MCP",
+    "email": "support@chrome-control-mcp.dev",
+    "url": "https://github.com/chrome-control-mcp"
+  },
+  "homepage": "https://github.com/chrome-control-mcp",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "chrome_launch",
+      "description": "Launch Chrome browser with optional headless mode and custom viewport size"
+    },
+    {
+      "name": "chrome_navigate",
+      "description": "Navigate to a URL and wait for page load"
+    },
+    {
+      "name": "chrome_click",
+      "description": "Click an element using CSS selector"
+    },
+    {
+      "name": "chrome_type",
+      "description": "Type text into an input field"
+    },
+    {
+      "name": "chrome_get_content",
+      "description": "Extract text content or attributes from page elements"
+    },
+    {
+      "name": "chrome_screenshot",
+      "description": "Take screenshots of the page or specific elements"
+    },
+    {
+      "name": "chrome_execute_script",
+      "description": "Execute JavaScript code in the page context"
+    },
+    {
+      "name": "chrome_get_title",
+      "description": "Get the current page title"
+    },
+    {
+      "name": "chrome_get_url",
+      "description": "Get the current page URL"
+    },
+    {
+      "name": "chrome_wait_for_selector",
+      "description": "Wait for an element to appear on the page"
+    },
+    {
+      "name": "chrome_get_elements",
+      "description": "Query multiple elements and extract their properties"
+    },
+    {
+      "name": "chrome_scroll",
+      "description": "Scroll the page to a position or element"
+    },
+    {
+      "name": "chrome_press_key",
+      "description": "Press a keyboard key"
+    },
+    {
+      "name": "chrome_go_back",
+      "description": "Navigate back in browser history"
+    },
+    {
+      "name": "chrome_go_forward",
+      "description": "Navigate forward in browser history"
+    },
+    {
+      "name": "chrome_reload",
+      "description": "Reload the current page"
+    },
+    {
+      "name": "chrome_set_viewport",
+      "description": "Change the viewport size"
+    },
+    {
+      "name": "chrome_get_cookies",
+      "description": "Get browser cookies"
+    },
+    {
+      "name": "chrome_set_cookie",
+      "description": "Set a browser cookie"
+    },
+    {
+      "name": "chrome_wait_for_navigation",
+      "description": "Wait for page navigation to complete"
+    },
+    {
+      "name": "chrome_close",
+      "description": "Close the browser"
+    }
+  ],
+  "user_config": {}
+}
